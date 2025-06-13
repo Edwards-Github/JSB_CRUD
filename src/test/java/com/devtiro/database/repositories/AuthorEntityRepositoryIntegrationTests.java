@@ -90,7 +90,7 @@ public class AuthorEntityRepositoryIntegrationTests {
         AuthorEntity testAuthorEntityC = TestDataUtil.createTestAuthorC();
         underTest.save(testAuthorEntityC);
 
-        Iterable<AuthorEntity> result = underTest.findAuthorsWithAgeGreaterThan(50);
+        Iterable<AuthorEntity> result = underTest.findAuthorEntityWithAgeGreaterThan(50);
         assertThat(result).containsExactly(testAuthorEntityA);
     }
 }
